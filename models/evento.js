@@ -1,36 +1,43 @@
 const db = require('./index');
 
 const evento = db.sequelize.define("evento",{
-    organizador:{
+    nomeADM:{
         type: db.Sequelize.STRING
     },
-    editorChefe:{
+    emailADM:{
         type: db.Sequelize.STRING
     },
+    
     nomeEvento:{
         type: db.Sequelize.STRING
     },
-    categoria:{
+    emailEvento:{
         type: db.Sequelize.STRING
     },
-    edicao:{
+    assunto:{
         type: db.Sequelize.STRING
     },
     descricao:{
         type: db.Sequelize.STRING
     },
-    inicio:{
-        type: db.Sequelize.DATE
-    },
-    final:{
-        type: db.Sequelize.DATE
-    },
-    area:{
+    apoiador:{
+        //Lista de apoiadores
         type: db.Sequelize.STRING
     },
-    tipo:{
+    visibilidade:{
+        //Evento publico ou privado
         type: db.Sequelize.STRING
-    }
+    },
+    anais:{
+        type: db.Sequelize.STRING
+    },
+    certificados:{
+        type: db.Sequelize.STRING
+    },
+    rhp:{
+        //tipo do evento: remoto, hibrido ou presencial
+        type: db.Sequelize.STRING
+    },
 })
 
 module.exports = evento;
