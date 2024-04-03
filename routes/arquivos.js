@@ -13,7 +13,7 @@ router.post("/arquivos", async (req, res) => {
     # tipo de usuario deve ser alterado possivelmente para a tabela dedicada a hierarquias,
     # necessito de explicação sobre 'cadastrar mais'
     # para adicionar arquivos tentei utilizar o field Blob
-    # mais arquivos parece ser redundante ? chamei de plusArquivo pq nn tenho criatividade pra nomes
+    # chamei de plusArquivo pq nn tenho criatividade pra nomes
     */
     const values = [
         req.body.tipoArquivo,

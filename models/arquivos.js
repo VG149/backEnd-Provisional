@@ -25,7 +25,7 @@ const evento = db.sequelize.define("arquivos",{
         type: db.Sequelize.STRING
     },
     area:{
-        //Evento publico ou privado
+        //Evento publico ou privadoa
         type: db.Sequelize.STRING
     },
     modArquivo:{
